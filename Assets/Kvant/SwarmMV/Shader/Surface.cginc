@@ -52,7 +52,6 @@ void vert(inout appdata_full v, out Input data)
 
 #if defined(NORMAL_FLIP)
     normal = -normal;
-    binormal = -binormal;
 #endif
 
     // Modify the vertex.

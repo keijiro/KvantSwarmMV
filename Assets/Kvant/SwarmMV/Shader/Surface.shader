@@ -56,12 +56,14 @@ Shader "Kvant/SwarmMV/Surface"
             ENDCG
         }
 
+        Cull Back
         CGPROGRAM
         #pragma surface surf Standard vertex:vert nolightmap addshadow
         #pragma target 3.0
         #include "Surface.cginc"
         ENDCG
 
+        Cull Front
         CGPROGRAM
         #pragma surface surf Standard vertex:vert nolightmap addshadow
         #pragma target 3.0
