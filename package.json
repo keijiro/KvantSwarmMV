@@ -1,0 +1,8 @@
+{
+    "name": "jp.keijiro.kvant.swarm-mv",
+    "displayName": "Kvant SwarmMV",
+    "version": "0.0.1",
+    "unity": "2018.1",
+    "description": "Kvant SwarmMV is a specialized version of Kvant Swarm that supports motion vector generation.",
+    "dependencies": { }
+}
