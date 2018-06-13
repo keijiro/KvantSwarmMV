@@ -1,0 +1,12 @@
+{
+    "name": "jp.keijiro.kvant.swarm-mv.Editor",
+    "references": [
+        "jp.keijiro.kvant.swarm-mv.Runtime"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}

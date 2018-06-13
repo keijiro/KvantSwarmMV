@@ -34,7 +34,7 @@ namespace Kino
         // Update internal state with a given bloom instance.
         public void Prepare(Bloom bloom)
         {
-            if (bloom.GetComponent<Camera>().hdr)
+            if (bloom.GetComponent<Camera>().allowHDR)
             {
                 _rangeX = 6;
                 _rangeY = 1.5f;

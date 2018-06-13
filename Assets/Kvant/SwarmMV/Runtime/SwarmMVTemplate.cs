@@ -111,7 +111,6 @@ namespace Kvant
             _mesh.SetUVs(0, uv0_out);
             _mesh.SetIndices(idx_out.ToArray(), MeshTopology.Triangles, 0);
             _mesh.bounds = new Bounds(Vector3.zero, Vector3.one * 1000);
-            _mesh.Optimize();
             _mesh.UploadMeshData(true);
         }
 

@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 //
 // Kino/Bloom v2 - Bloom filter for Unity
 //
@@ -157,7 +159,7 @@ v2f_img vert(appdata_img v)
     o.pos = UnityObjectToClipPos(v.vertex);
     o.uv = UnityStereoScreenSpaceUVAdjust(v.texcoord, _MainTex_ST);
 #else
-    o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+    o.pos = UnityObjectToClipPos(v.vertex);
     o.uv = v.texcoord;
 #endif
     return o;
@@ -178,7 +180,7 @@ v2f_multitex vert_multitex(appdata_img v)
     o.uvMain = UnityStereoScreenSpaceUVAdjust(v.texcoord, _MainTex_ST);
     o.uvBase = UnityStereoScreenSpaceUVAdjust(v.texcoord, _BaseTex_ST);
 #else
-    o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+    o.pos = UnityObjectToClipPos(v.vertex);
     o.uvMain = v.texcoord;
     o.uvBase = v.texcoord;
 #endif
