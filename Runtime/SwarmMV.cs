@@ -176,6 +176,11 @@ namespace Kvant
 
         #endif
 
+        public void Restart()
+        {
+            ResetSimulationState();
+        }
+
         #endregion
 
         #region Private members
